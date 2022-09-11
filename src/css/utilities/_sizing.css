@@ -1,0 +1,9 @@
+@layer utilities {
+    .h-screen {
+        max-height: stretch;
+    }
+
+    .max-h-screen {
+        max-height: stretch;
+    }
+}

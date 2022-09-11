@@ -1,0 +1,53 @@
+@layer utilities {
+    .transition-inherit {
+        transition-property: inherit;
+        transition-timing-function: inherit;
+        transition-duration: inherit;
+    }
+}
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+    @apply transition-opacity duration-200;
+}
+
+.fade-enter-active.cross,
+.fade-leave-active.cross {
+    @apply absolute;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    @apply opacity-0;
+}
+
+/* fade-right */
+.fade-right-enter-active,
+.fade-right-leave-active {
+    @apply transition duration-200 transform-gpu;
+}
+
+.fade-right-enter-from {
+    @apply -translate-x-32 opacity-0;
+}
+
+.fade-right-leave-to {
+    @apply translate-x-32 opacity-0;
+}
+
+/* scale-down */
+.scale-down-enter-active,
+.scale-down-leave-active {
+    @apply transition duration-200 ease-in-out origin-top transform-gpu;
+}
+
+.scale-down-enter-from,
+.scale-down-leave-to {
+    @apply scale-y-0 opacity-0;
+}
+
+.scale-down-enter-to,
+.scale-down-leave-from {
+    @apply scale-y-100 opacity-100;
+}

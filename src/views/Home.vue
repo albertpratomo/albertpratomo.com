@@ -2,5 +2,7 @@
 </script>
 
 <template>
-    <main />
+    <main class="container">
+        Halo
+    </main>
 </template>

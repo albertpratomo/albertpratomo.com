@@ -1,0 +1,15 @@
+@layer base {
+    @media (min-width: 1920px) {
+        html {
+            font-size: 20px;
+        }
+    }
+
+    .h1 {
+        @apply text-5xl font-semibold;
+    }
+
+    .h2 {
+        @apply text-4xl font-semibold;
+    }
+}
